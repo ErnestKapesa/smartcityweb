@@ -441,3 +441,434 @@ html {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/* Enhanced Background Animations */
+@keyframes backgroundZoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.hero-slide {
+    animation: backgroundZoom 20s ease-in-out infinite;
+}
+
+/* Slide Transition Effects */
+@keyframes slideTransition {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Glow Pulse for Chatbot */
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(0, 102, 204, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(0, 102, 204, 0.8), 0 0 40px rgba(0, 163, 224, 0.6);
+    }
+}
+
+.chatbot-toggle {
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Card Reveal Animation */
+@keyframes cardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(50px) rotateX(20deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+}
+
+.hq-card {
+    animation: cardReveal 0.8s ease-out;
+}
+
+/* Text Shine Effect */
+@keyframes textShine {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+.text-shine {
+    background: linear-gradient(90deg, #0066cc 0%, #00a3e0 50%, #0066cc 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textShine 3s linear infinite;
+}
+
+/* Bounce In Animation */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bounce-in {
+    animation: bounceIn 0.6s ease-out;
+}
+
+/* Rotate In Animation */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-200deg) scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+.rotate-in {
+    animation: rotateIn 0.8s ease-out;
+}
+
+/* Slide and Fade */
+@keyframes slideAndFade {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-and-fade {
+    animation: slideAndFade 0.8s ease-out;
+}
+
+/* Elastic Scale */
+@keyframes elasticScale {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.elastic-scale {
+    animation: elasticScale 0.8s ease-out;
+}
+
+/* Wave Animation */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+    75% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+}
+
+.wave {
+    animation: wave 2s ease-in-out infinite;
+}
+
+/* Gradient Border Animation */
+@keyframes gradientBorder {
+    0% {
+        border-image-source: linear-gradient(0deg, #0066cc, #00a3e0);
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, #0066cc, #00a3e0);
+    }
+    100% {
+        border-image-source: linear-gradient(360deg, #0066cc, #00a3e0);
+    }
+}
+
+/* Flip Card Animation */
+@keyframes flipCard {
+    0% {
+        transform: perspective(1000px) rotateY(0);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(180deg);
+    }
+}
+
+.flip-card {
+    animation: flipCard 0.6s ease-in-out;
+}
+
+/* Neon Glow */
+@keyframes neonGlow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 102, 204, 0.5),
+                     0 0 20px rgba(0, 102, 204, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 163, 224, 0.8),
+                     0 0 30px rgba(0, 163, 224, 0.6),
+                     0 0 40px rgba(0, 163, 224, 0.4);
+    }
+}
+
+.neon-glow {
+    animation: neonGlow 2s ease-in-out infinite;
+}
+
+/* Ripple Effect */
+@keyframes rippleEffect {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Swing Animation */
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+}
+
+.swing {
+    animation: swing 1s ease-in-out;
+    transform-origin: top center;
+}
+
+/* Jello Animation */
+@keyframes jello {
+    0%, 100% {
+        transform: skewX(0deg) skewY(0deg);
+    }
+    30% {
+        transform: skewX(25deg) skewY(25deg);
+    }
+    40% {
+        transform: skewX(-15deg) skewY(-15deg);
+    }
+    50% {
+        transform: skewX(15deg) skewY(15deg);
+    }
+    65% {
+        transform: skewX(-5deg) skewY(-5deg);
+    }
+    75% {
+        transform: skewX(5deg) skewY(5deg);
+    }
+}
+
+.jello {
+    animation: jello 1s ease-in-out;
+}
+
+/* Attention Seeker */
+@keyframes attentionSeeker {
+    0%, 100% {
+        transform: scale(1);
+    }
+    10%, 20% {
+        transform: scale(0.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90% {
+        transform: scale(1.1) rotate(3deg);
+    }
+    40%, 60%, 80% {
+        transform: scale(1.1) rotate(-3deg);
+    }
+}
+
+.attention-seeker {
+    animation: attentionSeeker 1s ease-in-out;
+}
+
+/* Smooth Entrance Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger Children Animation */
+.stagger-children > * {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+.stagger-children > *:nth-child(7) { animation-delay: 0.7s; }
+.stagger-children > *:nth-child(8) { animation-delay: 0.8s; }
+
+/* Hover Glow Effect */
+.hover-glow {
+    transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 20px rgba(0, 102, 204, 0.6),
+                0 0 40px rgba(0, 163, 224, 0.4);
+    transform: translateY(-5px);
+}
+
+/* Continuous Rotation */
+@keyframes continuousRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.continuous-rotate {
+    animation: continuousRotate 20s linear infinite;
+}
+
+/* Breathing Animation */
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+.breathing {
+    animation: breathing 3s ease-in-out infinite;
+}
+
+
+/* Product Card Animations */
+@keyframes productIconFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+}
+
+.product-icon-large {
+    animation: productIconFloat 3s ease-in-out infinite;
+}
+
+.product-card:hover .product-icon-large {
+    animation: none;
+}
+
+/* Product Badge Pulse */
+@keyframes badgePulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 102, 204, 0.5);
+    }
+}
+
+.product-badge {
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+/* Spec Item Reveal */
+@keyframes specReveal {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.product-card:hover .product-specs li {
+    animation: specReveal 0.4s ease-out forwards;
+}
+
+.product-card:hover .product-specs li:nth-child(1) { animation-delay: 0.1s; }
+.product-card:hover .product-specs li:nth-child(2) { animation-delay: 0.2s; }
+.product-card:hover .product-specs li:nth-child(3) { animation-delay: 0.3s; }
+.product-card:hover .product-specs li:nth-child(4) { animation-delay: 0.4s; }
+
+/* Power Rating Glow */
+@keyframes powerGlow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 102, 204, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 102, 204, 0.6), 0 0 30px rgba(0, 163, 224, 0.4);
+    }
+}
+
+.product-card:hover .product-power {
+    animation: powerGlow 2s ease-in-out infinite;
+}

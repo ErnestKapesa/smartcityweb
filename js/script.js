@@ -95,7 +95,7 @@ if (contactForm) {
             successMessage.className = 'success-message';
             successMessage.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! We will get back to you soon.';
             successMessage.style.cssText = `
-                background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+                background: var(--gradient);
                 color: white;
                 padding: 1.5rem;
                 border-radius: 10px;
@@ -362,3 +362,114 @@ window.addEventListener('load', () => {
 });
 
 console.log('Smart City Solar - Website Loaded Successfully');
+
+
+// Hero Background Slider
+const heroSlides = document.querySelectorAll('.hero-slide');
+let currentSlide = 0;
+
+function nextSlide() {
+    heroSlides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+    heroSlides[currentSlide].classList.add('active');
+}
+
+// Auto-advance slides every 5 seconds
+if (heroSlides.length > 0) {
+    setInterval(nextSlide, 5000);
+}
+
+// Enhanced parallax effect for hero section
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroContent = document.querySelector('.hero-content');
+    const heroSlider = document.querySelector('.hero-background-slider');
+    
+    if (heroContent) {
+        const speed = 0.3;
+        heroContent.style.transform = `translateY(${scrolled * speed}px)`;
+        heroContent.style.opacity = 1 - (scrolled / 600);
+    }
+    
+    if (heroSlider) {
+        heroSlider.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+});
+
+// Smooth reveal for headquarters cards
+const hqCards = document.querySelectorAll('.hq-card');
+const hqObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0) scale(1)';
+            }, index * 150);
+            hqObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 });
+
+hqCards.forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px) scale(0.95)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    hqObserver.observe(card);
+});
+
+// Service items animation
+const serviceItems = document.querySelectorAll('.service-item');
+const serviceObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0) rotateX(0)';
+            }, index * 100);
+            serviceObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+serviceItems.forEach(item => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(40px) rotateX(10deg)';
+    item.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+    serviceObserver.observe(item);
+});
+
+// Add hover effect to hero stats
+const heroStatItems = document.querySelectorAll('.hero-stat-item');
+heroStatItems.forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.05) translateY(-5px)';
+        this.style.background = 'rgba(255, 255, 255, 0.25)';
+    });
+    
+    item.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1) translateY(0)';
+        this.style.background = 'rgba(255, 255, 255, 0.15)';
+    });
+});
+
+// Enhanced image loading with fade-in effect
+const images = document.querySelectorAll('.hq-image');
+images.forEach(img => {
+    img.style.opacity = '0';
+    img.style.transition = 'opacity 0.8s ease';
+    
+    // Simulate image load
+    setTimeout(() => {
+        img.style.opacity = '1';
+    }, 300);
+});
+
+// Add floating animation to company tagline
+const tagline = document.querySelector('.company-tagline');
+if (tagline) {
+    setInterval(() => {
+        tagline.style.animation = 'float 3s ease-in-out infinite';
+    }, 100);
+}
+
+console.log('Smart City Solar - Enhanced features loaded');
