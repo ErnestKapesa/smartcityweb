@@ -293,6 +293,66 @@ html {
     font-size: 20px;
 }
 
+/* Lighting Concept Banner */
+.lighting-concept-banner {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--dark-color);
+}
+
+.lighting-visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lighting-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.lighting-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+}
+
+.lighting-content {
+    position: relative;
+    z-index: 2;
+    color: var(--light-color);
+    max-width: 800px;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.lighting-content h2 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.lighting-content p {
+    font-size: 21px;
+    font-weight: 300;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
 /* Projects Gallery */
 .projects-gallery {
     background: var(--gray-color);
@@ -830,5 +890,18 @@ html {
     .chatbot-toggle {
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .lighting-content h2 {
+        font-size: 40px;
+    }
+
+    .lighting-content p {
+        font-size: 17px;
+    }
+
+    .lighting-concept-banner {
+        height: 60vh;
+        min-height: 500px;
     }
 }

@@ -274,4 +274,24 @@ serviceBlocks.forEach(block => {
     serviceObserver.observe(block);
 });
 
+// Lighting concept banner animation
+const lightingContent = document.querySelector('.lighting-content');
+if (lightingContent) {
+    lightingContent.style.opacity = '0';
+    lightingContent.style.transform = 'translateX(-50px)';
+    lightingContent.style.transition = 'opacity 1s ease, transform 1s ease';
+    
+    const lightingObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateX(0)';
+                lightingObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    lightingObserver.observe(lightingContent);
+}
+
 console.log('Smart City Solar - Minimal Design Loaded');
