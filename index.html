@@ -3,330 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart City Solar - Advanced Solar Energy Solutions</title>
+    <title>Smart City Solar - Solar Energy Solutions</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <img src="Smart-City-Logo.png" alt="Smart City Solar">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="technology.html">Technology</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
-                </ul>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Smart-City-Logo.png" alt="Smart City Solar">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero hero-enhanced">
-        <div class="hero-background-slider">
-            <div class="hero-slide active" style="background-image: url('images/Smart-City-1.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('images/Smart-City-2.jpg')"></div>
-            <div class="hero-slide" style="background-image: url('images/Smart-City-3.jpg')"></div>
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero-minimal">
+        <div class="video-background">
+            <video class="hero-video active" autoplay muted loop playsinline>
+                <source src="images/Video-1.mp4" type="video/mp4">
+            </video>
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="images/Video-2.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
         </div>
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="company-tagline" data-aos="fade-down">
-                    <h3>Smart City Solar Energy Solution Provider</h3>
+        <div class="hero-content-minimal">
+            <h1>Illuminate Your City<br>Light Up Your Home</h1>
+            <p>Clean energy solutions for a sustainable future</p>
+            <div class="hero-cta">
+                <a href="#services" class="btn-minimal">Explore Services</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-minimal">
+        <div class="section-intro">
+            <h2>Our Services</h2>
+            <p>Comprehensive solar energy solutions tailored to your needs</p>
+        </div>
+
+        <!-- Commercial & Industrial -->
+        <div class="service-block">
+            <div class="service-image">
+                <img src="images/Smart-City-7.jpg" alt="Commercial Solar Solutions">
+            </div>
+            <div class="service-content">
+                <h3>Commercial & Industrial</h3>
+                <p>Large-scale photovoltaic systems for businesses, factories, and industrial facilities. From design to installation, we deliver reliable clean energy solutions.</p>
+                <ul class="service-features">
+                    <li>Custom system design</li>
+                    <li>Professional installation</li>
+                    <li>Ongoing maintenance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Residential Solutions -->
+        <div class="service-block reverse">
+            <div class="service-image">
+                <img src="images/Solar-Panels-Sleek-Carousel-Slide-1-Desktop.jpg" alt="Residential Solar">
+            </div>
+            <div class="service-content">
+                <h3>Residential Solar</h3>
+                <p>High-quality solar panels and energy storage systems for homes. Reduce your energy costs while contributing to a cleaner environment.</p>
+                <ul class="service-features">
+                    <li>Home energy assessment</li>
+                    <li>Premium solar panels</li>
+                    <li>Battery storage options</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Energy Storage -->
+        <div class="service-block">
+            <div class="service-image">
+                <img src="images/Solar-Panels-Sleek-Carousel-Slide-2-Desktop.jpg" alt="Energy Storage">
+            </div>
+            <div class="service-content">
+                <h3>Energy Storage Systems</h3>
+                <p>Advanced battery solutions to store solar energy for use anytime. Maximize your energy independence with our storage systems.</p>
+                <ul class="service-features">
+                    <li>14.33 kWh capacity</li>
+                    <li>6000+ charge cycles</li>
+                    <li>Smart energy management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section id="projects" class="projects-gallery">
+        <div class="section-intro">
+            <h2>Our Projects</h2>
+            <p>Delivering clean energy across Zambia and Southern Africa</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item large">
+                <img src="images/Smart-City-6.jpg" alt="Large Scale Solar Installation">
+                <div class="gallery-overlay">
+                    <h4>Industrial Solar Array</h4>
+                    <p>Multi-megawatt installation</p>
                 </div>
-                <h1 data-aos="fade-up" data-aos-delay="100">Illuminate Your City, <span class="highlight">Light Up Your Home</span></h1>
-                <p data-aos="fade-up" data-aos-delay="200">Leading manufacturer of photovoltaic modules and energy storage batteries. Committed to advancing global renewable energy solutions, serving customers across Europe, South America, and Africa with cutting-edge solar technology.</p>
-                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
-                    <div class="hero-stat-item">
-                        <i class="fas fa-solar-panel"></i>
-                        <span>525-645W Modules</span>
-                    </div>
-                    <div class="hero-stat-item">
-                        <i class="fas fa-industry"></i>
-                        <span>Wuxi, China Factory</span>
-                    </div>
-                    <div class="hero-stat-item">
-                        <i class="fas fa-globe-africa"></i>
-                        <span>Serving Africa</span>
-                    </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Smart-City-4.jpg" alt="Solar Installation">
+                <div class="gallery-overlay">
+                    <h4>Quality Inspection</h4>
+                    <p>Professional team</p>
                 </div>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-                    <a href="products.html" class="btn btn-primary">Explore Products</a>
-                    <a href="contact.html" class="btn btn-secondary">Get Quote</a>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Smart-City-5.jpg" alt="Commercial Project">
+                <div class="gallery-overlay">
+                    <h4>Commercial Installation</h4>
+                    <p>Rooftop systems</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Solar-A.png" alt="Solar Panel Design">
+                <div class="gallery-overlay">
+                    <h4>N-Type Technology</h4>
+                    <p>High efficiency modules</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Solar-B.png" alt="Solar Installation">
+                <div class="gallery-overlay">
+                    <h4>Residential Systems</h4>
+                    <p>Home installations</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Solar-C.png" alt="Solar Technology">
+                <div class="gallery-overlay">
+                    <h4>Advanced Systems</h4>
+                    <p>Smart monitoring</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
+    <!-- Why Choose Us -->
+    <section id="why-us" class="why-choose-minimal">
+        <div class="why-content">
+            <div class="why-text">
+                <h2>Why Choose Smart City</h2>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>30-Year Warranty</h4>
+                        <p>Industry-leading performance guarantee</p>
                     </div>
-                    <h3>High Efficiency</h3>
-                    <p>Up to 23.9% module efficiency with N-Type technology</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Expert Installation</h4>
+                        <p>Certified professional team</p>
                     </div>
-                    <h3>30-Year Warranty</h3>
-                    <p>87.4% output guarantee after 30 years of operation</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">
-                        <i class="fas fa-fire-extinguisher"></i>
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>High Efficiency</h4>
+                        <p>Up to 23.9% module efficiency</p>
                     </div>
-                    <h3>Fire Class A</h3>
-                    <p>Superior safety standards with advanced protection</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon">
-                        <i class="fas fa-weight-hanging"></i>
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Local Support</h4>
+                        <p>Dedicated team in Zambia</p>
                     </div>
-                    <h3>5400Pa Load</h3>
-                    <p>Strengthened mechanical load for extreme conditions</p>
                 </div>
+            </div>
+            <div class="why-image">
+                <img src="images/Smart-City-2.jpg" alt="Smart City Team">
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Product Range</h2>
-                <p>Industry-leading solar modules and energy storage solutions</p>
-            </div>
-            <div class="products-grid">
-                <div class="product-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="product-visual">
-                        <div class="product-icon-large">
-                            <i class="fas fa-solar-panel"></i>
-                        </div>
-                        <div class="product-badge">N-Type</div>
-                    </div>
-                    <h3>SMT620-645M12 Series</h3>
-                    <p class="product-power">620-645 Watt</p>
-                    <ul class="product-specs">
-                        <li><i class="fas fa-check-circle"></i> 210x182mm 16BB 132 Cells</li>
-                        <li><i class="fas fa-check-circle"></i> Double Glass Bifacial</li>
-                        <li><i class="fas fa-check-circle"></i> N-Type Mono Half Cell</li>
-                        <li><i class="fas fa-check-circle"></i> 23.0-23.9% Efficiency</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="product-visual">
-                        <div class="product-icon-large">
-                            <i class="fas fa-solar-panel"></i>
-                        </div>
-                        <div class="product-badge topcon">TOPCON</div>
-                    </div>
-                    <h3>SMT550-590M10 Series</h3>
-                    <p class="product-power">550-590 Watt</p>
-                    <ul class="product-specs">
-                        <li><i class="fas fa-check-circle"></i> 182mm 144 Cells</li>
-                        <li><i class="fas fa-check-circle"></i> SMBB Technology</li>
-                        <li><i class="fas fa-check-circle"></i> Half Cut Topcon Cell</li>
-                        <li><i class="fas fa-check-circle"></i> 21.25-22.84% Efficiency</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-visual">
-                        <div class="product-icon-large battery-icon">
-                            <i class="fas fa-battery-full"></i>
-                        </div>
-                        <div class="product-badge ess">ESS</div>
-                    </div>
-                    <h3>SMT-EOV48-15PW</h3>
-                    <p class="product-power">14.33 kWh</p>
-                    <ul class="product-specs">
-                        <li><i class="fas fa-check-circle"></i> LFP Prismatic Cell</li>
-                        <li><i class="fas fa-check-circle"></i> 6000+ Cycles @ 80% DoD</li>
-                        <li><i class="fas fa-check-circle"></i> Wall Mounting Design</li>
-                        <li><i class="fas fa-check-circle"></i> Natural Cooling</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
+    <!-- Technology Showcase -->
+    <section class="tech-showcase">
+        <div class="tech-visual">
+            <img src="images/Gemini_Generated_Image_v0ogomv0ogomv0og.png" alt="Solar Technology">
         </div>
-    </section>
-
-    <!-- Technology Section -->
-    <section id="technology" class="technology">
-        <div class="container">
-            <div class="tech-content">
-                <div class="tech-text">
-                    <h2>Advanced N-Type Technology</h2>
-                    <p>Our cutting-edge N-Type solar modules represent the future of photovoltaic technology, delivering superior performance and longevity.</p>
-                    <div class="tech-features">
-                        <div class="tech-item">
-                            <h4>SMBB Technology</h4>
-                            <p>Super Multi Busbar design reduces resistance and increases efficiency</p>
-                        </div>
-                        <div class="tech-item">
-                            <h4>Bifacial Efficiency</h4>
-                            <p>Up to 20% additional power gain from rear side absorption</p>
-                        </div>
-                        <div class="tech-item">
-                            <h4>Half-Cut Cells</h4>
-                            <p>Reduced hot-spot risk and improved shade tolerance</p>
-                        </div>
-                    </div>
+        <div class="tech-info">
+            <h2>Advanced Technology</h2>
+            <p>N-Type solar cells with TOPCON technology deliver superior performance and longevity. Our bifacial modules capture sunlight from both sides for maximum energy generation.</p>
+            <div class="tech-stats-minimal">
+                <div class="stat-minimal">
+                    <span class="stat-number">645W</span>
+                    <span class="stat-label">Max Power</span>
                 </div>
-                <div class="tech-stats">
-                    <div class="stat-box">
-                        <h3>100%</h3>
-                        <p>Quality Inspection</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>87.4%</h3>
-                        <p>30-Year Output</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>1500V</h3>
-                        <p>System Voltage</p>
-                    </div>
+                <div class="stat-minimal">
+                    <span class="stat-number">23.9%</span>
+                    <span class="stat-label">Efficiency</span>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <h2 data-aos="fade-up">About Smart City Solar</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Smart City is a leading manufacturer of photovoltaic (PV) modules and energy storage batteries, with our state-of-the-art production base located in Wuxi, Jiangsu, China. We are committed to advancing global renewable energy solutions, specializing in high-quality solar products and integrated energy storage systems that serve customers across Europe, South America, and Africa.</p>
-                <p data-aos="fade-up" data-aos-delay="200">With a strong international presence, Smart City has established a dedicated office in Lusaka, Zambia, to better serve the Southern African market. We have successfully delivered multiple large-scale power plant projects across Zambia and neighboring regions, demonstrating our expertise and commitment to sustainable energy solutions.</p>
-                <p data-aos="fade-up" data-aos-delay="300">Driven by innovation, quality, and local partnerships, Smart City empowers communities and industries worldwide with reliable, clean energy—bridging the gap between cutting-edge sustainable technology and a greener future for all.</p>
-                
-                <div class="services-grid" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fas fa-building"></i></div>
-                        <h4>Commercial & Industrial Solutions</h4>
-                        <p>Comprehensive photovoltaic energy solutions for governments, international organizations, factories, mines, commercial centers, and filling stations. Tailored systems designed for maximum efficiency and reliability.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fas fa-home"></i></div>
-                        <h4>Residential Solar Solutions</h4>
-                        <p>Wholesale and retail of high-quality photovoltaic panels, batteries, and inverters for homeowners, complete with professional installation and ongoing support services.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon"><i class="fas fa-leaf"></i></div>
-                        <h4>Sustainability & Carbon Management</h4>
-                        <p>Supporting corporate carbon footprint management, reducing emissions, and accelerating the achievement of carbon neutrality targets through innovative clean energy solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Work Section -->
-    <section class="headquarters-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-aos="fade-up">Our Projects & Team</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Professional solar installations across Zambia with our experienced team delivering quality renewable energy solutions</p>
-            </div>
-            <div class="hq-grid">
-                <div class="hq-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="hq-image" style="background-image: url('images/Smart-City-4.jpg')"></div>
-                    <h3>Expert Installation Team</h3>
-                    <p>Our certified technicians conducting professional solar panel inspections and installations with precision and expertise</p>
-                </div>
-                <div class="hq-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="hq-image" style="background-image: url('images/Smart-City-5.jpg')"></div>
-                    <h3>Commercial Solar Projects</h3>
-                    <p>Large-scale commercial and industrial photovoltaic installations delivering reliable clean energy to businesses</p>
-                </div>
-                <div class="hq-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="hq-image" style="background-image: url('images/Smart-City-6.jpg')"></div>
-                    <h3>Industrial Scale Solutions</h3>
-                    <p>Massive solar arrays providing sustainable power generation for industrial facilities and commercial complexes</p>
+                <div class="stat-minimal">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">Year Warranty</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Ready to power your future with clean energy?</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h4>📍 Location</h4>
-                        <p>Avic International Lusaka West<br>Mumbwa Road<br>Lusaka, Zambia</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>📞 Phone & WhatsApp</h4>
-                        <p>+260 764 171796<br>+260 972 088888</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>✉️ Email</h4>
-                        <p>smartcitysolar@vip.qq.com</p>
-                    </div>
+    <section id="contact" class="contact-minimal">
+        <div class="contact-content-minimal">
+            <h2>Get Started</h2>
+            <p>Ready to power your future with clean energy?</p>
+            <div class="contact-info-minimal">
+                <div class="contact-item-minimal">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Avic International, Mumbwa Road, Lusaka</span>
                 </div>
-                <div class="contact-form">
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Phone Number">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="contact-item-minimal">
+                    <i class="fas fa-phone"></i>
+                    <span>+260 764 171796 / +260 972 088888</span>
+                </div>
+                <div class="contact-item-minimal">
+                    <i class="fas fa-envelope"></i>
+                    <span>smartcitysolar@vip.qq.com</span>
                 </div>
             </div>
+            <a href="tel:+260764171796" class="btn-minimal">Contact Us</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="Smart-City-Logo.png" alt="Smart City Solar">
-                    <p>Powering a sustainable future</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#technology">Technology</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p>+260 764 171796</p>
-                    <p>sell@smartcityzam.com</p>
-                </div>
+    <footer class="footer-minimal">
+        <div class="footer-content-minimal">
+            <div class="footer-logo">
+                <img src="Smart-City-Logo.png" alt="Smart City Solar">
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Smart City Solar. All rights reserved.</p>
+            <div class="footer-links-minimal">
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#contact">Contact</a>
             </div>
+            <p>&copy; 2026 Smart City Solar. All rights reserved.</p>
         </div>
     </footer>
 
@@ -343,12 +281,12 @@
             <div class="bot-message">
                 <div class="message-avatar"><i class="fas fa-robot"></i></div>
                 <div class="message-content">
-                    <p>Hello! I'm your Smart City Solar assistant. How can I help you today?</p>
+                    <p>Hello! How can I help you today?</p>
                     <div class="quick-questions">
-                        <button class="quick-btn" data-question="products">Our Products</button>
-                        <button class="quick-btn" data-question="services">Our Services</button>
-                        <button class="quick-btn" data-question="warranty">Warranty Info</button>
-                        <button class="quick-btn" data-question="contact">Contact Us</button>
+                        <button class="quick-btn" data-question="services">Services</button>
+                        <button class="quick-btn" data-question="projects">Projects</button>
+                        <button class="quick-btn" data-question="warranty">Warranty</button>
+                        <button class="quick-btn" data-question="contact">Contact</button>
                     </div>
                 </div>
             </div>
@@ -361,10 +299,8 @@
     
     <button id="chatbot-toggle" class="chatbot-toggle">
         <i class="fas fa-comments"></i>
-        <span class="chatbot-badge">1</span>
     </button>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/chatbot.js"></script>
 </body>
