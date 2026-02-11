@@ -31,16 +31,14 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Video Background -->
-    <section id="home" class="hero-minimal">
-        <div class="video-background">
-            <video class="hero-video active" autoplay muted loop playsinline>
-                <source src="images/Video-1.mp4" type="video/mp4">
-            </video>
-            <video class="hero-video" autoplay muted loop playsinline>
-                <source src="images/Video-2.mp4" type="video/mp4">
-            </video>
-            <div class="video-overlay"></div>
+    <!-- Hero Section with Image Carousel -->
+    <section id="home" class="hero-carousel">
+        <div class="carousel-background">
+            <div class="carousel-slide active" style="background-image: url('images/Smart-City-1.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('images/Smart-City-2.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('images/Smart-City-6.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('images/Smart-City-7.jpg');"></div>
+            <div class="carousel-overlay"></div>
         </div>
         <div class="hero-content-minimal">
             <h1>Illuminate Your City<br>Light Up Your Home</h1>
@@ -55,57 +53,53 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-minimal">
-        <div class="section-intro">
-            <h2>Our Services</h2>
-            <p>Comprehensive solar energy solutions tailored to your needs</p>
-        </div>
+    <section id="services" class="fullwidth-section" style="background-image: url('images/Solar-Panels-Sleek-Carousel-Slide-1-Desktop.jpg');">
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <div class="section-intro">
+                <h2>Our Services</h2>
+                <p>Comprehensive solar energy solutions tailored to your needs</p>
+            </div>
 
-        <!-- Commercial & Industrial -->
-        <div class="service-block">
-            <div class="service-image">
-                <img src="images/Smart-City-7.jpg" alt="Commercial Solar Solutions">
-            </div>
-            <div class="service-content">
-                <h3>Commercial & Industrial</h3>
-                <p>Large-scale photovoltaic systems for businesses, factories, and industrial facilities. From design to installation, we deliver reliable clean energy solutions.</p>
-                <ul class="service-features">
-                    <li>Custom system design</li>
-                    <li>Professional installation</li>
-                    <li>Ongoing maintenance</li>
-                </ul>
-            </div>
-        </div>
+            <div class="service-cards-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Commercial & Industrial</h3>
+                    <p>Large-scale photovoltaic systems for businesses, factories, and industrial facilities.</p>
+                    <ul class="service-features">
+                        <li>Custom system design</li>
+                        <li>Professional installation</li>
+                        <li>Ongoing maintenance</li>
+                    </ul>
+                </div>
 
-        <!-- Residential Solutions -->
-        <div class="service-block reverse">
-            <div class="service-image">
-                <img src="images/Solar-Panels-Sleek-Carousel-Slide-1-Desktop.jpg" alt="Residential Solar">
-            </div>
-            <div class="service-content">
-                <h3>Residential Solar</h3>
-                <p>High-quality solar panels and energy storage systems for homes. Reduce your energy costs while contributing to a cleaner environment.</p>
-                <ul class="service-features">
-                    <li>Home energy assessment</li>
-                    <li>Premium solar panels</li>
-                    <li>Battery storage options</li>
-                </ul>
-            </div>
-        </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Solar</h3>
+                    <p>High-quality solar panels and energy storage systems for homes.</p>
+                    <ul class="service-features">
+                        <li>Home energy assessment</li>
+                        <li>Premium solar panels</li>
+                        <li>Battery storage options</li>
+                    </ul>
+                </div>
 
-        <!-- Energy Storage -->
-        <div class="service-block">
-            <div class="service-image">
-                <img src="images/Solar-Panels-Sleek-Carousel-Slide-2-Desktop.jpg" alt="Energy Storage">
-            </div>
-            <div class="service-content">
-                <h3>Energy Storage Systems</h3>
-                <p>Advanced battery solutions to store solar energy for use anytime. Maximize your energy independence with our storage systems.</p>
-                <ul class="service-features">
-                    <li>14.33 kWh capacity</li>
-                    <li>6000+ charge cycles</li>
-                    <li>Smart energy management</li>
-                </ul>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Energy Storage Systems</h3>
+                    <p>Advanced battery solutions to store solar energy for use anytime.</p>
+                    <ul class="service-features">
+                        <li>14.33 kWh capacity</li>
+                        <li>6000+ charge cycles</li>
+                        <li>Smart energy management</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -123,62 +117,66 @@
     </section>
 
     <!-- Projects Gallery -->
-    <section id="projects" class="projects-gallery">
-        <div class="section-intro">
-            <h2>Our Projects</h2>
-            <p>Delivering clean energy across Zambia and Southern Africa</p>
-        </div>
-        
-        <div class="gallery-grid">
-            <div class="gallery-item large">
-                <img src="images/Solar-Install-B.png" alt="Large Scale Solar Installation">
-                <div class="gallery-overlay">
-                    <h4>Industrial Solar Array</h4>
-                    <p>Multi-megawatt installation</p>
-                </div>
+    <section id="projects" class="fullwidth-section" style="background-image: url('images/Solar-Install-B.png');">
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <div class="section-intro">
+                <h2>Our Projects</h2>
+                <p>Delivering clean energy across Zambia and Southern Africa</p>
             </div>
-            <div class="gallery-item">
-                <img src="images/Solar-Implimentation-3.png" alt="Solar Installation">
-                <div class="gallery-overlay">
-                    <h4>Quality Inspection</h4>
-                    <p>Professional team</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="images/Solar-Install-B.png" alt="Large Scale Solar Installation">
+                    <div class="gallery-overlay">
+                        <h4>Industrial Solar Array</h4>
+                        <p>Multi-megawatt installation</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Solar-Implimentation-1.png" alt="Commercial Project">
-                <div class="gallery-overlay">
-                    <h4>Commercial Installation</h4>
-                    <p>Rooftop systems</p>
+                <div class="gallery-item">
+                    <img src="images/Solar-Implimentation-3.png" alt="Solar Installation">
+                    <div class="gallery-overlay">
+                        <h4>Quality Inspection</h4>
+                        <p>Professional team</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Solar-Implimentation-2.png" alt="Solar Panel Design">
-                <div class="gallery-overlay">
-                    <h4>N-Type Technology</h4>
-                    <p>High efficiency modules</p>
+                <div class="gallery-item">
+                    <img src="images/Solar-Implimentation-1.png" alt="Commercial Project">
+                    <div class="gallery-overlay">
+                        <h4>Commercial Installation</h4>
+                        <p>Rooftop systems</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Smart-City-Implimenmtation-3.png" alt="Solar Installation">
-                <div class="gallery-overlay">
-                    <h4>Residential Systems</h4>
-                    <p>Home installations</p>
+                <div class="gallery-item">
+                    <img src="images/Solar-Implimentation-2.png" alt="Solar Panel Design">
+                    <div class="gallery-overlay">
+                        <h4>N-Type Technology</h4>
+                        <p>High efficiency modules</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Solar-C.png" alt="Solar Technology">
-                <div class="gallery-overlay">
-                    <h4>Advanced Systems</h4>
-                    <p>Smart monitoring</p>
+                <div class="gallery-item">
+                    <img src="images/Smart-City-Implimenmtation-3.png" alt="Solar Installation">
+                    <div class="gallery-overlay">
+                        <h4>Residential Systems</h4>
+                        <p>Home installations</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Solar-C.png" alt="Solar Technology">
+                    <div class="gallery-overlay">
+                        <h4>Advanced Systems</h4>
+                        <p>Smart monitoring</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section id="why-us" class="why-choose-minimal">
-        <div class="why-content">
-            <div class="why-text">
+    <section id="why-us" class="fullwidth-section" style="background-image: url('images/Smart-City-2.jpg');">
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <div class="why-content-centered">
                 <h2>Why Choose Smart City</h2>
                 <div class="why-grid">
                     <div class="why-item">
@@ -211,32 +209,29 @@
                     </div>
                 </div>
             </div>
-            <div class="why-image">
-                <img src="images/Smart-City-2.jpg" alt="Smart City Team">
-            </div>
         </div>
     </section>
 
     <!-- Technology Showcase -->
-    <section class="tech-showcase">
-        <div class="tech-visual">
-            <img src="images/Gemini_Generated_Image_v0ogomv0ogomv0og.png" alt="Solar Technology">
-        </div>
-        <div class="tech-info">
-            <h2>Advanced Technology</h2>
-            <p>N-Type solar cells with TOPCON technology deliver superior performance and longevity. Our bifacial modules capture sunlight from both sides for maximum energy generation.</p>
-            <div class="tech-stats-minimal">
-                <div class="stat-minimal">
-                    <span class="stat-number">645W</span>
-                    <span class="stat-label">Max Power</span>
-                </div>
-                <div class="stat-minimal">
-                    <span class="stat-number">23.9%</span>
-                    <span class="stat-label">Efficiency</span>
-                </div>
-                <div class="stat-minimal">
-                    <span class="stat-number">30</span>
-                    <span class="stat-label">Year Warranty</span>
+    <section class="fullwidth-section" style="background-image: url('images/Gemini_Generated_Image_v0ogomv0ogomv0og.png');">
+        <div class="section-overlay dark"></div>
+        <div class="section-content">
+            <div class="tech-info-centered">
+                <h2>Advanced Technology</h2>
+                <p>N-Type solar cells with TOPCON technology deliver superior performance and longevity. Our bifacial modules capture sunlight from both sides for maximum energy generation.</p>
+                <div class="tech-stats-minimal">
+                    <div class="stat-minimal">
+                        <span class="stat-number">645W</span>
+                        <span class="stat-label">Max Power</span>
+                    </div>
+                    <div class="stat-minimal">
+                        <span class="stat-number">23.9%</span>
+                        <span class="stat-label">Efficiency</span>
+                    </div>
+                    <div class="stat-minimal">
+                        <span class="stat-number">30</span>
+                        <span class="stat-label">Year Warranty</span>
+                    </div>
                 </div>
             </div>
         </div>

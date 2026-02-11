@@ -872,3 +872,120 @@ html {
 .product-card:hover .product-power {
     animation: powerGlow 2s ease-in-out infinite;
 }
+
+
+/* Scroll Transition Animations */
+@keyframes slideDownFadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Smooth Section Transitions */
+.fullwidth-section {
+    animation: slideUpFadeIn 0.8s ease-out;
+}
+
+.fullwidth-section.slide-out {
+    animation: slideDownFadeOut 0.8s ease-out forwards;
+}
+
+/* Service Card Stagger Animation */
+.service-cards-grid .service-card {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.service-cards-grid .service-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.service-cards-grid .service-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.service-cards-grid .service-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Gallery Grid Reveal */
+.gallery-grid .gallery-item {
+    opacity: 0;
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+.gallery-grid .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+.gallery-grid .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+.gallery-grid .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+.gallery-grid .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+.gallery-grid .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+.gallery-grid .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Why Items Reveal */
+.why-content-centered .why-item {
+    opacity: 0;
+    animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.why-content-centered .why-item:nth-child(1) { animation-delay: 0.1s; }
+.why-content-centered .why-item:nth-child(2) { animation-delay: 0.2s; }
+.why-content-centered .why-item:nth-child(3) { animation-delay: 0.3s; }
+.why-content-centered .why-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Parallax Background Effect */
+@keyframes parallaxMove {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
+}
+
+/* Enhanced Carousel Zoom */
+@keyframes carouselZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Section Content Fade In */
+.section-content {
+    animation: fadeIn 1s ease-out 0.3s both;
+}
+
+/* Overlay Pulse */
+@keyframes overlayPulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.section-overlay {
+    animation: overlayPulse 8s ease-in-out infinite;
+}

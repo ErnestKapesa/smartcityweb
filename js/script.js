@@ -51,20 +51,40 @@ if (mobileMenuToggle) {
     });
 }
 
-// Video Background Slider
-const heroVideos = document.querySelectorAll('.hero-video');
-let currentVideoIndex = 0;
+// Image Carousel for Hero Section
+const carouselSlides = document.querySelectorAll('.carousel-slide');
+let currentSlideIndex = 0;
 
-function switchVideo() {
-    heroVideos[currentVideoIndex].classList.remove('active');
-    currentVideoIndex = (currentVideoIndex + 1) % heroVideos.length;
-    heroVideos[currentVideoIndex].classList.add('active');
+function switchSlide() {
+    carouselSlides[currentSlideIndex].classList.remove('active');
+    currentSlideIndex = (currentSlideIndex + 1) % carouselSlides.length;
+    carouselSlides[currentSlideIndex].classList.add('active');
 }
 
-// Switch video every 10 seconds
-if (heroVideos.length > 1) {
-    setInterval(switchVideo, 10000);
+// Switch slide every 5 seconds
+if (carouselSlides.length > 1) {
+    setInterval(switchSlide, 5000);
 }
+
+// Scroll Transition Effect for Full-Width Sections
+const fullwidthSections = document.querySelectorAll('.fullwidth-section');
+
+const scrollTransitionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('slide-out');
+        } else if (entry.boundingClientRect.top < 0) {
+            entry.target.classList.add('slide-out');
+        }
+    });
+}, {
+    threshold: [0, 0.1, 0.5],
+    rootMargin: '-10% 0px -10% 0px'
+});
+
+fullwidthSections.forEach(section => {
+    scrollTransitionObserver.observe(section);
+});
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
